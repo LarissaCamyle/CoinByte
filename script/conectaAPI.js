@@ -1,7 +1,8 @@
 import { dadosDoGrafico } from "./dadosDoGrafico.js";
-import { graficoParaDolar } from "./graficoParaDolar.js";
+import { graficoParaDolar } from "./graficoParaDolar.js";   
+import { imprimeCotacao } from "./imprimeCotacao.js";
 
-//recebe as informações da API e chama as funções
+/* //recebe as informações da API e chama as funções
 export async function conectaAPI() {
     const conecta = await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL")
     const conectaTraduzido = await conecta.json();
@@ -12,4 +13,8 @@ export async function conectaAPI() {
 
     //printa os dados
     dadosDoGrafico.adicionarDados(graficoParaDolar, tempo, valor)
+
+    //printa a cotacao
+    imprimeCotacao('dolar', valor)
 }
+ */
