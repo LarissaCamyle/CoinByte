@@ -4,12 +4,14 @@ export function imprimeCotacao(nome, valor){
 
     const acentos = {
         "dolar": "dólar",
-        "iene": "iene"
+        "iene": "iene",
+        "euro": "euro"
     }
 
     const plurais = {
         "dolar": "dólares",
-        "iene": "ienes"
+        "iene": "ienes",
+        "euro": "euros"
     }
 
     //em vez de somar ele multiplica i por 10 a cada loop
