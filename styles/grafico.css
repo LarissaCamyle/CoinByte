@@ -52,12 +52,35 @@
     margin: 1em 0;
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 550px){
     .dadosDolar,
     .dadosIene,
     .dadosEuro {
         flex-direction: column;
         margin: 3rem 0.7rem;
+    }
+
+    
+    .grafico {
+        width: 100%;
+    }
+    
+    .investimentos h2 {
+        margin-top: 3rem;
+    }
+
+    .grafico__titulo h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+    .dadosDolar,
+    .dadosIene,
+    .dadosEuro {
+        flex-direction: column;
+        margin: 3rem;
     }
 
     .grafico {

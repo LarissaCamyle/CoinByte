@@ -35,3 +35,10 @@ main{
     width: 100%;
     background: var(--lilas);
 }
+
+@media screen and (min-width: 800px) {
+    main{
+        margin-left: 25%;
+    }
+
+}
