@@ -1,15 +1,14 @@
 .dadosDolar,
 .dadosIene,
 .dadosEuro {
-    margin: 3em auto;
+    margin: 2rem;
     padding: 2em;
     display: flex;
     justify-content: space-between;
     background-color: white;
     border-radius: 24px;
-    width: 80%;
     color: var(--cinza);
-}
+} 
 
 .grafico {
     width: 40vw;
@@ -51,4 +50,25 @@
 
 .investimentos__lista li {
     margin: 1em 0;
+}
+
+@media screen and (max-width: 700px) {
+    .dadosDolar,
+    .dadosIene,
+    .dadosEuro {
+        flex-direction: column;
+        margin: 3rem 0.7rem;
+    }
+
+    .grafico {
+        width: 100%;
+    }
+    
+    .investimentos h2 {
+        margin-top: 3rem;
+    }
+
+    .grafico__titulo h2 {
+        font-size: 22px;
+    }
 }

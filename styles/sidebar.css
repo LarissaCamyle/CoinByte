@@ -5,7 +5,7 @@
     background-color: var(--roxo);
     padding: 10rem 0;
     filter: drop-shadow(4px 4px 8px rgba(98, 0, 255, 0.24));
-
+    width: 25%;
 }
 
 .sidebar__avatar {
@@ -31,4 +31,31 @@
 aside img{
     width: 90%;
     padding: 0.5rem;
+}
+
+.sidebar-celular{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .sidebar{
+        display: none;
+    }
+
+    .sidebar-celular{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--roxo);
+        padding: 0.5rem;
+        filter: drop-shadow(4px 4px 8px rgba(98, 0, 255, 0.24));
+        width: 100%;
+        height: 4rem;
+    }
+
+    aside img{
+        width: 13rem;
+        padding: 0.5rem;
+    }
 }

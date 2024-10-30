@@ -13,65 +13,69 @@
 </head>
 
 <body class="container">
-  <aside class="sidebar">
-    <img src="./imagens/logoCoin.png" alt="Logo do bytebank" />
-    <hr class="sidebar__linha" />
-    <H1>Acompanhe as cotações de moedas em tempo real e tome decisões financeiras com confiança.</H1>
-  </aside>
 
-  <main class="dados">
-    <header class="cabecalho">
-      <h2>Cotações de moedas estrangeiras</h2>
-    </header>
+    <aside class="sidebar">
+      <img src="./imagens/logoCoin.png" alt="Logo do bytebank" />
+      <hr class="sidebar__linha" />
+      <H1>Acompanhe as cotações de moedas em tempo real e tome decisões financeiras com confiança.</H1>
+    </aside>
+    
+    <main class="dados">
+        <aside class="sidebar-celular">
+          <img src="./imagens/logoCoin.png" alt="Logo do bytebank" />
+        </aside>
 
-    <article class="dadosDolar">
-      <div class="grafico">
-        <div class="grafico__titulo">
-          <span class="grafico__ilustracao-dolar"></span>
-          <h2>DÓLAR</h2>
-        </div>
-        <canvas id="graficoDolar"></canvas>
-      </div>
+        <header class="cabecalho">
+          <h2>Cotações de moedas estrangeiras</h2>
+        </header>
 
-      <div class="investimentos">
-        <h2>Valores da moeda</h2>
-        <ul class="investimentos__lista" id="dolar" data-lista>
-        </ul>
-      </div>
-    </article>
-
-    <article class="dadosIene">
+        <article class="dadosDolar">
           <div class="grafico">
             <div class="grafico__titulo">
-              <span class="grafico__ilustracao-iene"></span>
-              <h2>IENE</h2>
+              <span class="grafico__ilustracao-dolar"></span>
+              <h2>DÓLAR</h2>
             </div>
-            <canvas id="graficoIene"></canvas>
+            <canvas id="graficoDolar"></canvas>
           </div>
     
           <div class="investimentos">
             <h2>Valores da moeda</h2>
-            <ul class="investimentos__lista" id="iene" data-lista>
+            <ul class="investimentos__lista" id="dolar" data-lista>
             </ul>
           </div>
-    </article>
-
-    <article class="dadosEuro">
-      <div class="grafico">
-        <div class="grafico__titulo">
-          <span class="grafico__ilustracao-euro"></span>
-          <h2>EURO</h2>
-        </div>
-        <canvas id="graficoEuro"></canvas>
-      </div>
-
-      <div class="investimentos">
-        <h2>Valores da moeda</h2>
-        <ul class="investimentos__lista" id="euro" data-lista>
-        </ul>
-      </div>
-  </article>
-
+        </article>
+    
+        <article class="dadosIene">
+              <div class="grafico">
+                <div class="grafico__titulo">
+                  <span class="grafico__ilustracao-iene"></span>
+                  <h2>IENE</h2>
+                </div>
+                <canvas id="graficoIene"></canvas>
+              </div>
+        
+              <div class="investimentos">
+                <h2>Valores da moeda</h2>
+                <ul class="investimentos__lista" id="iene" data-lista>
+                </ul>
+              </div>
+        </article>
+    
+        <article class="dadosEuro">
+          <div class="grafico">
+            <div class="grafico__titulo">
+              <span class="grafico__ilustracao-euro"></span>
+              <h2>EURO</h2>
+            </div>
+            <canvas id="graficoEuro"></canvas>
+          </div>
+    
+          <div class="investimentos">
+            <h2>Valores da moeda</h2>
+            <ul class="investimentos__lista" id="euro" data-lista>
+            </ul>
+          </div>
+      </article> 
   </main>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./script/script.js" type="module"></script>
